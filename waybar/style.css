@@ -1,0 +1,15 @@
+#custom-quote {
+  background-color: black;
+  color: white;
+  font-family: "Spleen 8x16", monospace;
+  font-size: 18px; /* Increased font size */
+  padding: 3px 12px; /* Increased padding */
+  border: 3px solid white;
+  margin: 0;  /* Centers horizontally */
+  margin-top: 6px;
+}
+
+#waybar {
+  background: transparent; /* Makes the bar itself invisible */
+  border: none;
+}

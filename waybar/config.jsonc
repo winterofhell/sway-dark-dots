@@ -1,0 +1,13 @@
+{
+  "layer": "background", // Renders the bar behind apps
+  "position": "top",
+  "exclusive": false, // Allows other windows to overlap the bar
+  "passthrough": true, // Makes the bar click-through
+  "modules-center": ["custom/quote"],
+  "custom/quote": {
+    "exec": "echo '`A man who is a master of patience is master of everything else.´'",
+    "interval": 600000, // Update the quote every 10 minutes (adjust if needed)
+    "return-type": "plain",
+    "max-length": 100 // Ensures long text doesn't overflow
+  }
+}
