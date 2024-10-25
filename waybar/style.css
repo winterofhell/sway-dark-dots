@@ -2,11 +2,11 @@
   background-color: black;
   color: white;
   font-family: "Spleen 8x16", monospace;
-  font-size: 18px; /* Increased font size */
-  padding: 3px 12px; /* Increased padding */
+  font-size: 17px; /* Increased font size */
+  padding: 3px 13px; /* Increased padding */
   border: 3px solid white;
   margin: 0;  /* Centers horizontally */
-  margin-top: 6px;
+  margin-top: 8px;
 }
 
 #waybar {

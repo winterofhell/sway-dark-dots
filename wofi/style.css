@@ -1,37 +1,35 @@
 window {
     margin: 0px;
-    border: 1px solid #bd93f9;
-    background-color: #282a36;
+    border: 1px solid #000000;
+    background-color: #ffffff;
 }
 
 #input {
-    margin: 5px;
+    margin: 6px;
     border: none;
-    color: #f8f8f2;
-    background-color: #44475a;
+    color: #000000;
+    background-color: #ffffff;
 }
 
 #inner-box {
-    margin: 5px;
+    margin: 0px;
     border: none;
-    background-color: #282a36;
+    background-color: #000000;
 }
 
 #outer-box {
-    margin: 5px;
+    margin: 4px;
     border: none;
-    background-color: #282a36;
+    background-color: #000000;
 }
-
 #scroll {
-    margin: 0px;
-    border: none;
-}
-
-#text {
     margin: 5px;
     border: none;
-    color: #f8f8f2;
+}
+#text {
+    margin: 3px;
+    border: none;
+    color: #ffffff;
 }
 
 /* Icon styling */
@@ -43,17 +41,18 @@ window {
 }
 
 #entry.activatable #text {
-    color: #282a36;
+    color: #ffffff;
 }
 
 #entry > * {
-    color: #f8f8f2;
+    color: #ffffff;
 }
 
 #entry:selected {
-    background-color: #44475a;
+    background-color: #ffffff;
 }
 
 #entry:selected #text {
     font-weight: bold;
+    color: #000000;
 }

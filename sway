@@ -1,4 +1,6 @@
 ### Variables
+output * scale 1.2
+exec autotiling-rs
 exec swaybg -i /home/winterofhell/Pictures/Wallpapers/wallpaper3.jpg -m fill
 font pango:"spleen-8x16" 10
 # Set border width and color
@@ -45,9 +47,11 @@ set $term kitty
     # telegram
     bindsym $mod+Shift+t exec telegram-desktop
     # firefox
-    bindsym $mod+Shift+f exec firefox-aurora
+    bindsym $mod+Shift+f exec firefox
     # Start a terminal
     bindsym $mod+Return exec $term
+    # screenshot
+    bindsym $mod+Print exec flameshot gui
 
     # Kill focused window
     bindsym --to-code $mod+q kill
