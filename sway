@@ -1,7 +1,13 @@
 ### Variables
-output * scale 1.2
-exec autotiling-rs
-exec swaybg -i /home/winterofhell/Pictures/Wallpapers/wallpaper3.jpg -m fill
+for_window [class="^.*"] inhibit_idle focus
+exec autotiling
+exec waybar
+exec export LANG=en_US.UTF-8
+exec --no-startup-id nmcli device disconnect wlan0
+default_border pixel
+default_floating_border pixel
+exec export WLR_DRM_NO_ATOMIC=1
+# exec swaybg -i /home/winterofhell/Pictures/Wallpapers/wallpaper3.jpg -m fill
 font pango:"spleen-8x16" 10
 # Set border width and color
 gaps inner 0
@@ -18,8 +24,12 @@ set $left h
 set $down j
 set $up k
 set $right l
+
+output HDMI-A-1 pos 0 0
+output eDP-1 pos 1920 0
+
 # Your preferred terminal emulator
-set $term kitty
+set $term alacritty
 ### Output configuration
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # output * bg /usr/share/backgrounds/default.png fill
@@ -50,9 +60,13 @@ set $term kitty
     bindsym $mod+Shift+f exec firefox
     # Start a terminal
     bindsym $mod+Return exec $term
-    # screenshot
-    bindsym $mod+Print exec flameshot gui
 
+    # brightness
+    bindsym XF86MonBrightnessDown exec brightnessctl s 5%-
+    bindsym XF86MonBrightnessUp exec brightnessctl s +5%
+    
+    bindsym $mod+Shift+s exec grim -g "$(slurp)" - | wl-copy
+    
     # Kill focused window
     bindsym --to-code $mod+q kill
 
